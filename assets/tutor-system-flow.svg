@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Course-Grounded Tutor system flow</title>
+  <desc id="desc">A three-layer diagram showing learner input, diagnosis-first teaching, and the adaptive mastery loop.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="0.55" stop-color="#f7f5ff"/>
+      <stop offset="1" stop-color="#f5fbf7"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3478f6"/>
+      <stop offset="1" stop-color="#2457c5"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#6d3bd1"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#27ae7a"/>
+      <stop offset="1" stop-color="#16875a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#24324a" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2d64d8"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#16875a"/>
+    </marker>
+    <style>
+      .title{font:700 34px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#172033}
+      .subtitle{font:500 17px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#667085}
+      .band-title{font:700 24px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif}
+      .card-title{font:700 19px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#1d2939}
+      .card-sub{font:500 14px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#667085}
+      .tiny{font:600 13px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#475467}
+      .pill{font:650 13px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;fill:#344054}
+      .number{font:700 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:white}
+      .line{fill:none;stroke:#2d64d8;stroke-width:4;marker-end:url(#arrowBlue)}
+      .loop{fill:none;stroke:#16875a;stroke-width:4;marker-end:url(#arrowGreen)}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1050" rx="30" fill="url(#bg)"/>
+  <text x="800" y="58" text-anchor="middle" class="title">Course-Grounded Tutor · 诊断式学习闭环</text>
+  <text x="800" y="88" text-anchor="middle" class="subtitle">从学习目标与课程证据出发，只选择当前最有价值的下一步</text>
+
+  <!-- Layer 1 -->
+  <rect x="40" y="120" width="1520" height="280" rx="28" fill="#eef5ff" stroke="#7ca6ef" stroke-width="2"/>
+  <circle cx="78" cy="158" r="20" fill="url(#blue)"/><text x="78" y="164" text-anchor="middle" class="number">1</text>
+  <text x="112" y="166" class="band-title" fill="#2457c5">Grounded Intake · 理解学习任务</text>
+
+  <g filter="url(#shadow)">
+    <rect x="85" y="205" width="250" height="145" rx="20" fill="white"/>
+    <circle cx="140" cy="258" r="28" fill="#dbe9ff"/><path d="M128 263c6-22 31-22 36 0M146 239a10 10 0 1 0 0 .1" fill="none" stroke="#2d64d8" stroke-width="4" stroke-linecap="round"/>
+    <text x="185" y="250" class="card-title">学习者输入</text>
+    <text x="185" y="277" class="card-sub">问题 · 目标 · 当前状态</text>
+    <text x="210" y="320" text-anchor="middle" class="tiny">“我卡在哪里？”</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="425" y="205" width="250" height="145" rx="20" fill="white"/>
+    <rect x="466" y="231" width="55" height="66" rx="6" fill="#f2ecff" stroke="#7c4dde" stroke-width="3"/>
+    <path d="M478 247h30M478 260h30M478 273h22" stroke="#7c4dde" stroke-width="3" stroke-linecap="round"/>
+    <text x="540" y="250" class="card-title">课程证据</text>
+    <text x="540" y="277" class="card-sub">PPT · PDF · DOCX · 笔记</text>
+    <text x="550" y="320" text-anchor="middle" class="tiny">保留来源与上下文</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="765" y="205" width="310" height="145" rx="20" fill="white"/>
+    <circle cx="820" cy="260" r="30" fill="#e7efff"/>
+    <path d="M808 260l8 8 18-21M839 277l17 17" fill="none" stroke="#2457c5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="865" y="245" class="card-title">知识系统定位</text>
+    <text x="865" y="272" class="card-sub">学科 → 主题 → 核心概念</text>
+    <text x="920" y="320" text-anchor="middle" class="tiny">确认前置知识与真实目标</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1165" y="205" width="350" height="145" rx="20" fill="white"/>
+    <path d="M1217 241h44v38h-44zM1228 230v11M1250 230v11" fill="#fff5d6" stroke="#d29a16" stroke-width="3"/>
+    <circle cx="1239" cy="260" r="7" fill="#f7c948"/>
+    <text x="1290" y="245" class="card-title">缺口诊断</text>
+    <text x="1290" y="272" class="card-sub">概念 · 符号 · 方法 · 推理</text>
+    <text x="1340" y="320" text-anchor="middle" class="tiny">找到最早的阻塞点</text>
+  </g>
+  <path d="M335 278H415" class="line"/><path d="M675 278H755" class="line"/><path d="M1075 278H1155" class="line"/>
+
+  <!-- Layer 2 -->
+  <rect x="40" y="425" width="1520" height="305" rx="28" fill="#f5f0ff" stroke="#a88be8" stroke-width="2"/>
+  <circle cx="78" cy="463" r="20" fill="url(#violet)"/><text x="78" y="469" text-anchor="middle" class="number">2</text>
+  <text x="112" y="471" class="band-title" fill="#6d3bd1">Adaptive Teaching Engine · 选择下一步教学动作</text>
+
+  <g filter="url(#shadow)">
+    <rect x="85" y="515" width="280" height="155" rx="20" fill="white"/>
+    <circle cx="137" cy="568" r="28" fill="#ede4ff"/>
+    <path d="M120 568h34M137 551v34" stroke="#7547d6" stroke-width="5" stroke-linecap="round"/>
+    <text x="185" y="558" class="card-title">模式与深度</text>
+    <text x="185" y="585" class="card-sub">零基础 · 标准 · 进阶 · Auto</text>
+    <rect x="115" y="618" width="220" height="28" rx="14" fill="#f4f0ff"/><text x="225" y="637" text-anchor="middle" class="pill">控制认知负荷</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="445" y="515" width="300" height="155" rx="20" fill="white"/>
+    <path d="M493 553c16-19 37-11 38 7 19-3 31 20 15 32-15 11-49 4-57-11-5-9-3-20 4-28z" fill="#dff7ee" stroke="#23956a" stroke-width="3"/>
+    <path d="M506 563c7 1 13 6 14 13M520 548v10M501 586l-8 9" fill="none" stroke="#23956a" stroke-width="3" stroke-linecap="round"/>
+    <text x="560" y="558" class="card-title">直觉 → 形式化</text>
+    <text x="560" y="585" class="card-sub">例子 · 定义 · 符号 · 为什么</text>
+    <rect x="480" y="618" width="230" height="28" rx="14" fill="#eaf9f3"/><text x="595" y="637" text-anchor="middle" class="pill">一次只教一个小单元</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="825" y="515" width="300" height="155" rx="20" fill="white"/>
+    <circle cx="878" cy="567" r="29" fill="#fff1dc"/>
+    <path d="M865 570l9 9 19-25M866 589h25" fill="none" stroke="#d88116" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="925" y="558" class="card-title">理解检查</text>
+    <text x="925" y="585" class="card-sub">复述 · 预测 · 识错 · 近迁移</text>
+    <rect x="855" y="618" width="240" height="28" rx="14" fill="#fff7e8"/><text x="975" y="637" text-anchor="middle" class="pill">提问后停下等待</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1205" y="515" width="310" height="155" rx="20" fill="white"/>
+    <path d="M1251 549h48v39h-31l-14 12v-12h-3z" fill="#e5efff" stroke="#2d64d8" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="1264" cy="568" r="3" fill="#2d64d8"/><circle cx="1275" cy="568" r="3" fill="#2d64d8"/><circle cx="1286" cy="568" r="3" fill="#2d64d8"/>
+    <text x="1320" y="558" class="card-title">自然教师表达</text>
+    <text x="1320" y="585" class="card-sub">解释 · 引导 · 反馈 · 总结</text>
+    <rect x="1240" y="618" width="240" height="28" rx="14" fill="#edf4ff"/><text x="1360" y="637" text-anchor="middle" class="pill">不暴露内部协议</text>
+  </g>
+  <path d="M365 592H435" class="line"/><path d="M745 592H815" class="line"/><path d="M1125 592H1195" class="line"/>
+
+  <!-- Layer 3 -->
+  <rect x="40" y="755" width="1520" height="250" rx="28" fill="#effaf4" stroke="#65b88f" stroke-width="2"/>
+  <circle cx="78" cy="793" r="20" fill="url(#green)"/><text x="78" y="799" text-anchor="middle" class="number">3</text>
+  <text x="112" y="801" class="band-title" fill="#16875a">Mastery Loop · 根据学习信号自适应推进</text>
+
+  <g filter="url(#shadow)"><rect x="100" y="842" width="245" height="105" rx="18" fill="white"/><text x="222" y="878" text-anchor="middle" class="card-title">读取学习信号</text><text x="222" y="907" text-anchor="middle" class="card-sub">正确 · 部分正确 · 困惑</text><text x="222" y="930" text-anchor="middle" class="card-sub">重复错误 · 过载</text></g>
+  <g filter="url(#shadow)"><rect x="455" y="842" width="245" height="105" rx="18" fill="white"/><text x="577" y="878" text-anchor="middle" class="card-title">定位错误类型</text><text x="577" y="907" text-anchor="middle" class="card-sub">记号 / 概念 / 方法</text><text x="577" y="930" text-anchor="middle" class="card-sub">推理 / 迁移</text></g>
+  <g filter="url(#shadow)"><rect x="810" y="842" width="245" height="105" rx="18" fill="white"/><text x="932" y="878" text-anchor="middle" class="card-title">匹配干预动作</text><text x="932" y="907" text-anchor="middle" class="card-sub">换表示 · 降难度 · 局部修复</text><text x="932" y="930" text-anchor="middle" class="card-sub">练习或压缩解释</text></g>
+  <g filter="url(#shadow)"><rect x="1165" y="842" width="330" height="105" rx="18" fill="white"/><text x="1330" y="878" text-anchor="middle" class="card-title">Readiness Gate</text><rect x="1198" y="898" width="92" height="30" rx="15" fill="#e6f7ee"/><text x="1244" y="918" text-anchor="middle" class="pill">进阶</text><rect x="1298" y="898" width="92" height="30" rx="15" fill="#fff3df"/><text x="1344" y="918" text-anchor="middle" class="pill">复习</text><rect x="1398" y="898" width="70" height="30" rx="15" fill="#eee8ff"/><text x="1433" y="918" text-anchor="middle" class="pill">记录</text></g>
+  <path d="M345 895H445" class="loop"/><path d="M700 895H800" class="loop"/><path d="M1055 895H1155" class="loop"/>
+  <path d="M1330 947C1330 995 870 1000 505 978C270 964 220 951 220 957" fill="none" stroke="#16875a" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrowGreen)"/>
+  <text x="760" y="992" text-anchor="middle" class="tiny" fill="#16875a">未掌握：回到最小有效教学步骤 · 已掌握：提炼迁移模式并继续</text>
+</svg>
