@@ -4,7 +4,7 @@
 
 ### 先定位你为什么不会，再决定下一步怎么教
 
-**更适合大学生体质的ai辅助自学skill**
+**面向大学 STEM 与 AI/CS 的诊断式学习助手**
 
 [![Agent Skill](https://img.shields.io/badge/Agent_Skill-Standard-2563EB?style=flat-square)](./SKILL.md)
 ![Focus](https://img.shields.io/badge/Focus-STEM_%2F_AI--CS-7C3AED?style=flat-square)
@@ -90,7 +90,13 @@
 
 ### Codex
 
-下载或克隆本仓库，然后将整个目录复制到 Codex Skills 目录：
+先克隆仓库：
+
+```bash
+git clone https://github.com/schnitzlermandy85-beep/course-grounded-tutor.git
+```
+
+在 macOS / Linux 终端中，将整个目录复制到 Codex Skills 目录：
 
 ```bash
 mkdir -p ~/.codex/skills
@@ -233,3 +239,4 @@ PPTX、DOCX 和 PDF 提取分别需要 `python-pptx`、`python-docx` 和 `pdfplu
 **让 AI 不只会回答，也知道应该从哪里开始教。**
 
 </div>
+
